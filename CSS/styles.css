@@ -1,13 +1,27 @@
 
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
 * {
     font-family: 'Inter', sans-serif;
     text-decoration: none;
     text-align: center;
-    margin: 15px auto;
+}
+
+html {
+    box-sizing: border-box;
 }
 
 :visited {
     color: rgb(161, 161, 139);
+}
+
+a:hover {
+    text-decoration: underline;
+    zoom: 120%;
+    color: black;
+    rotate: 5deg;
 }
 
 a {
@@ -15,14 +29,7 @@ a {
     text-transform: capitalize;
 }
 
-a:hover {
-    text-decoration: underline;
-    zoom: 120%;
-    color: black;
-}
-
 p {
-    box-sizing: border-box;
     padding: 0 3.5%;
 }
 
@@ -32,21 +39,19 @@ header, footer{
     color: white;
 }
 
+header li, footer li {
+    background-color: beige;
+    border: 5px;
+    padding: 5px 0px;
+    display: block;
+}
+
 body {
-    width: 90%;
     padding: 20px;
 }
 
 ul {
     margin-left: -40px;
-}
-
-li {
-    border: 5px;
-    padding: 0px 5px;
-    display: block;
-    box-sizing: border-box;
-    background-color: beige;
 }
 
 img {
@@ -61,8 +66,6 @@ footer {
 }
 
 footer ul {
-    border: 5px;
-    border-radius: 5px;
     color: grey;   
 }
 
@@ -81,7 +84,9 @@ footer li:nth-child(2) {
 
 #portfolio {
     padding: 25px;
+    clear: both;
 }
+
 
 
 
@@ -95,11 +100,40 @@ footer li:nth-child(2) {
 
 /* Media Queries */
 
-/* @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+    main li {
+        display: inline-block;
+    }
+
+    body li {
+        width: 30%;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    nav li {
+        display: inline-block;
+        padding: 0px 2em;
+    }
+
+    header {
+    }
+
+    .profile-picture {
+        width: 43%;
+        float: right;
+        margin: 20px;
+        padding: 30px;
+    }
+
+    header p {
+        padding: 100px;
+    }
+
 
 }
 
 @media screen and (min-width: 1024px) {
 
 
-} */
+}
