@@ -1,0 +1,98 @@
+
+* {
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+}
+
+:visited {
+    color: rgb(161, 161, 139);
+}
+
+a {
+    color: grey;
+    text-transform: capitalize;
+}
+
+a:hover {
+    text-decoration: underline;
+    zoom: 120%;
+    color: black;
+}
+
+header, footer{
+    background: rgb(11,136,196);
+    background: linear-gradient(180deg, rgba(11,136,196,1) 30%, rgba(33,202,224,1) 75%, rgba(0,212,255,1) 100%);    padding: 3%;
+    color: white;
+}
+
+body {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+ul {
+    margin-left: -40px;
+}
+
+li {
+    border: 5px;
+    padding: 0px 5px;
+    margin: 10px;
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: beige;
+}
+
+img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 2.5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer ul {
+    border: 5px;
+    border-radius: 5px;
+    padding-bottom: 50px;
+    color: grey;
+}
+
+footer li:first-child {
+    float: left;
+}
+
+footer li:nth-child(2) {
+    float: right;
+}
+
+
+.profile-picture {
+    width: 75%;
+}
+
+#portfolio {
+    padding: 25px;
+    background: rgb(87, 195, 224);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+
+/* @media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 1024px) {
+
+
+} */
