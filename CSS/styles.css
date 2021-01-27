@@ -9,10 +9,6 @@
     text-align: center;
 }
 
-html {
-    box-sizing: border-box;
-}
-
 :visited {
     color: rgb(161, 161, 139);
 }
@@ -25,12 +21,20 @@ a:hover {
 }
 
 a {
-    color: grey;
+    color: rgb(45, 43, 43);
     text-transform: capitalize;
 }
 
 p {
     padding: 0 3.5%;
+}
+
+main li {
+    display: inline-block;
+}
+
+html {
+    box-sizing: border-box;
 }
 
 header, footer{
@@ -39,10 +43,11 @@ header, footer{
     color: white;
 }
 
-header li, footer li {
+header li {
     background-color: beige;
     border: 5px;
-    padding: 5px 0px;
+    padding: .1px 0px;
+    margin: 5px;
     display: block;
 }
 
@@ -73,13 +78,21 @@ footer li:first-child {
     float: left;
 }
 
-footer li:nth-child(2) {
+footer #student-name-footer {
+    float: left;
+    padding-bottom: 50px;
+}
+
+footer #back-to-top {
     float: right;
+    padding-bottom: 50px;
 }
 
 
 .profile-picture {
     width: 75%;
+    padding: 15px;
+    margin: 10px;
 }
 
 #portfolio {
@@ -105,35 +118,66 @@ footer li:nth-child(2) {
         display: inline-block;
     }
 
+    header li {
+        display: inline-block;
+        padding: 10px;
+    }
+
+    main li {
+        width: 40%;
+        padding: 5px;
+        margin: 10px;
+    }
+
+    .profile-picture {
+        float: right;
+        width: 20em;
+        margin: 10px 40px;
+    }
+
+    header p {
+        padding-top: 3em;
+    }
+
+    header {
+        height: 48vh;
+    }
+
+    
+}
+
+@media screen and (min-width: 1024px) {
+    main li {
+        display: inline-block;
+    }
+
     body li {
         width: 30%;
         padding: 5px;
         margin: 5px;
     }
 
-    nav li {
-        display: inline-block;
-        padding: 0px 2em;
+    #student-name-header {
+        float: left;
     }
 
-    header {
+    header li {
+        display: inline-block;
+        width: 17%;
     }
 
     .profile-picture {
-        width: 43%;
+        width: 35vh;
         float: right;
-        margin: 20px;
-        padding: 30px;
+        margin: 20px 100px 20px 30px;
+    }
+
+    header {
+        height: 45vh;
     }
 
     header p {
-        padding: 100px;
+        padding: 60px;
     }
-
-
-}
-
-@media screen and (min-width: 1024px) {
-
 
 }
