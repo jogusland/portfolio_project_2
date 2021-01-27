@@ -1,12 +1,12 @@
-
 *, *::before, *::after {
     box-sizing: inherit;
 }
 
 * {
-    font-family: 'Inter', sans-serif;
     text-decoration: none;
     text-align: center;
+    letter-spacing: .1em;
+    font-family: 'Roboto', sans-serif, Arial, Helvetica;
 }
 
 :visited {
@@ -17,7 +17,6 @@ a:hover {
     text-decoration: underline;
     zoom: 120%;
     color: black;
-    rotate: 5deg;
 }
 
 a {
@@ -29,7 +28,12 @@ p {
     padding: 0 3.5%;
 }
 
+main {
+    padding: 0px;
+}
+
 main li {
+    height: 300px;
     display: inline-block;
 }
 
@@ -37,7 +41,7 @@ html {
     box-sizing: border-box;
 }
 
-header, footer{
+header, .contact{
     background: rgb(11,136,196);
     background: linear-gradient(180deg, rgba(11,136,196,1) 30%, rgba(33,202,224,1) 75%, rgba(0,212,255,1) 100%);    padding: 3%;
     color: white;
@@ -52,7 +56,7 @@ header li {
 }
 
 body {
-    padding: 20px;
+    padding: 0px;
 }
 
 ul {
@@ -88,14 +92,22 @@ footer #back-to-top {
     padding-bottom: 50px;
 }
 
-
 .profile-picture {
     width: 75%;
     padding: 15px;
     margin: 10px;
 }
 
+.articles {
+    margin: 40px;
+}
+
+.contact {
+    margin: 0px;
+}
+
 #portfolio {
+    margin-top: 30px;
     padding: 25px;
     clear: both;
 }
@@ -127,6 +139,10 @@ footer #back-to-top {
         width: 40%;
         padding: 5px;
         margin: 10px;
+    }
+
+    h2 {
+        margin: 5px;
     }
 
     .profile-picture {
