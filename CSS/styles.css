@@ -34,7 +34,7 @@ main {
 
 main li {
     display: inline-block;
-    margin: 30px 10px;
+    margin: 30px 5%;
     padding: 30px 10%;
     color: white;
     background-color:  rgb(11,136,196);
@@ -156,7 +156,7 @@ span.contact-details {
 
     main li {
         display: inline-block;
-        margin: 30px 10px;
+        margin: 30px 10%;
         padding: 30px 10%;
         color: white;
         background-color: rgb(11,136,196);
@@ -207,7 +207,7 @@ span.contact-details {
 
     main li {
         display: inline-block;
-        margin: 30px 10px;
+        margin: 30px 5%;
         padding: 30px 1%;
         color: white;
         background-color:  rgb(11,136,196);
