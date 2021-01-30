@@ -33,8 +33,11 @@ main {
 }
 
 main li {
-    height: 300px;
     display: inline-block;
+    margin: 30px 10px;
+    padding: 30px 10%;
+    color: white;
+    background-color:  rgb(11,136,196);
 }
 
 html {
@@ -53,6 +56,10 @@ header li {
     padding: .1px 0px;
     margin: 5px;
     display: block;
+}
+
+div.skills {
+    margin-bottom: 30px; 
 }
 
 body {
@@ -110,14 +117,19 @@ span.contact-details {
     margin: 0px;
 }
 
+.skills {
+    padding-bottom: 100px;
+}
+
 .block {
     width: 90%;
     margin: 20px auto;
     min-height: 430px;
 }
 
-#portfolio {
+#portfolio, #skills {
     margin-top: 30px;
+    margin-bottom: 50px;
     padding: 25px;
     clear: both;
 }
@@ -136,9 +148,6 @@ span.contact-details {
 /* Media Queries */
 
 @media screen and (min-width: 768px) {
-    main li {
-        display: inline-block;
-    }
 
     header li {
         display: inline-block;
@@ -146,9 +155,11 @@ span.contact-details {
     }
 
     main li {
-        width: 40%;
-        padding: 5px;
-        margin: 10px;
+        display: inline-block;
+        margin: 30px 10px;
+        padding: 30px 10%;
+        color: white;
+        background-color: rgb(11,136,196);
     }
 
     h2 {
@@ -185,14 +196,21 @@ span.contact-details {
 }
 
 @media screen and (min-width: 1024px) {
-    main li {
-        display: inline-block;
-    }
+    
+    
 
     body li {
         width: 30%;
         padding: 5px;
         margin: 5px;
+    }
+
+    main li {
+        display: inline-block;
+        margin: 30px 10px;
+        padding: 30px 1%;
+        color: white;
+        background-color:  rgb(11,136,196);
     }
 
     #student-name-header {
