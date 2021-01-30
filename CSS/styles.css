@@ -1,5 +1,5 @@
 *, *::before, *::after {
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
 * {
@@ -92,6 +92,10 @@ footer #back-to-top {
     padding-bottom: 50px;
 }
 
+span.contact-details {
+    font-weight: bolder;
+}
+
 .profile-picture {
     width: 75%;
     padding: 15px;
@@ -104,6 +108,12 @@ footer #back-to-top {
 
 .contact {
     margin: 0px;
+}
+
+.block {
+    width: 90%;
+    margin: 20px auto;
+    min-height: 430px;
 }
 
 #portfolio {
@@ -151,12 +161,24 @@ footer #back-to-top {
         margin: 10px 40px;
     }
 
+    .block {
+        float: left;
+        width: 50%;
+        padding: 0 20px;
+    } 
+
+    .clearfix::after {
+        content: " ";
+        display: table;
+        clear: both;
+    }
+
     header p {
         padding-top: 3em;
     }
 
     header {
-        height: 48vh;
+        height: 52vh;
     }
 
     
@@ -183,13 +205,17 @@ footer #back-to-top {
     }
 
     .profile-picture {
-        width: 35vh;
+        width: 50vh;
         float: right;
         margin: 20px 100px 20px 30px;
     }
 
+    .block {
+        width: 33%;
+    }
+
     header {
-        height: 45vh;
+        height: 52vh;
     }
 
     header p {
