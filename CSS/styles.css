@@ -94,7 +94,7 @@ footer #student-name-footer {
     padding-bottom: 50px;
 }
 
-footer #back-to-top {
+footer .float-right {
     float: right;
     padding-bottom: 50px;
 }
@@ -124,7 +124,11 @@ span.contact-details {
 .block {
     width: 90%;
     margin: 20px auto;
-    min-height: 430px;
+    min-height: 420px;
+}
+
+.hide {
+    display: none;
 }
 
 #portfolio, #skills {
@@ -156,7 +160,7 @@ span.contact-details {
 
     main li {
         display: inline-block;
-        margin: 30px 10%;
+        margin: 20px 5%;
         padding: 30px 10%;
         color: white;
         background-color: rgb(11,136,196);
@@ -168,7 +172,7 @@ span.contact-details {
 
     .profile-picture {
         float: right;
-        width: 20em;
+        width: 330px;
         margin: 10px 40px;
     }
 
@@ -184,12 +188,20 @@ span.contact-details {
         clear: both;
     }
 
+    .hide {
+        display: inline;
+    }
+
+    #back-to-top {
+        display: none;
+    }
+
     header p {
         padding-top: 3em;
     }
 
     header {
-        height: 52vh;
+        height: 430px;;
     }
 
     
@@ -208,7 +220,7 @@ span.contact-details {
     main li {
         display: inline-block;
         margin: 30px 5%;
-        padding: 30px 1%;
+        padding: 20px 1%;
         color: white;
         background-color:  rgb(11,136,196);
     }
@@ -217,13 +229,17 @@ span.contact-details {
         float: left;
     }
 
-    header li {
-        display: inline-block;
-        width: 17%;
+    #back-to-top {
+        display: none;
     }
 
+    header li {
+        display: inline-block;
+        width: 14%;
+    }
+    
     .profile-picture {
-        width: 50vh;
+        width: 370px;
         float: right;
         margin: 20px 100px 20px 30px;
     }
@@ -233,7 +249,7 @@ span.contact-details {
     }
 
     header {
-        height: 52vh;
+        height: 450px;;
     }
 
     header p {
